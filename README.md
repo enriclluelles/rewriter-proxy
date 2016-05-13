@@ -10,6 +10,10 @@ Small proxy written in go that accepts series of host settings each one with:
 
 To install:
 
-* Clone into your `$GOPATH
+* Clone into your `$GOPATH`
 * `go get .`
 * `go build .`
+
+To run:
+
+* `./rewriter-proxy [config-file.json]` (it uses ./config.json as a default)
