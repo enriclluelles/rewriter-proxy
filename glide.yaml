@@ -1,0 +1,3 @@
+package: github.com/enriclluelles/rewriter-proxy
+import:
+- package: github.com/vulcand/oxy

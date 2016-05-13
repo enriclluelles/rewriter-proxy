@@ -1,0 +1,9 @@
+hash: b1b45a5d546e7eda9ef212beb1d410e6c3c77003df514eba63bf00089b24b5e6
+updated: 2016-05-13T18:17:18.800397172+02:00
+imports:
+- name: github.com/vulcand/oxy
+  version: 11677428db34c4a05354d66d028174d0e3c6e905
+  subpackages:
+  - forward
+  - utils
+devImports: []
