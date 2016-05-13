@@ -1,0 +1,24 @@
+{
+  "sites": [{
+    "virtualHost": "secure.mysite.com",
+    "replacements": [{
+      "source": "http://(www.)mysite.com",
+      "target": "https://secure.mysite.com"
+    }, {
+      "source": "http://cdn.mysite.com",
+      "target": "https://cdn.mysite.com"
+    }],
+    "hostHeader": "secure.mysite.com",
+    "endpoint": "http://195.77.179.104:80",
+    "rewriteLocations": true
+	}, {
+		"virtualHost": "myothersite",
+		"replacements": [{
+			"source": "http://(.+).3rdpartysite.com",
+			"target": "https://$1.myothersite.com"
+		}],
+		"hostHeader": "r.myothersite.com",
+    "endpoint": "http://206.190.36.45",
+  }],
+  "listenURL": "0.0.0.0:80"
+}
