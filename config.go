@@ -50,12 +50,12 @@ func parseConfig() Config {
 
 	configString, err := ioutil.ReadFile(filename)
 	if err != nil {
-		log.Fatal("Coulnd't open file %s: %#v", filename, err)
+		log.Fatal(err)
 	}
 
 	err = json.Unmarshal(configString, &config)
 	if err != nil {
-		log.Fatal("Couldn't parse file %s: %#v", filename, err)
+		log.Fatal(err)
 	}
 
 	for _, s := range config.SiteConfigs {
